@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f49f6297e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lift.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <i class="fas fa-long-arrow-alt-down arrow-icon downBtn" id="secondDownArrow"></i>
+            </div>
+            <div class="level-card col-7">
+                <div class="level-elevator-container">
+                    <p class="level-name-container">Level 2</p>
+                    <div id="level2" class="elevator-container d-none">
+                        <span class="elevator-text text-center">Elevator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="double-arrows-container ">
+                    <i class="fas fa-long-arrow-alt-up arrow-icon double-arrow-icon upBtn" id="firstUpArrow"></i>
+                    <i class="fas fa-long-arrow-alt-down arrow-icon double-arrow-icon downBtn" id="firstDownArrow"></i>
+                </div>
+            </div>
+            <div class="level-card col-7">
+                <div class="level-elevator-container">
+                    <p class="level-name-container">Level 1</p>
+                    <div id="level1" class="elevator-container d-none">
+                        <span class="elevator-text text-center">Elevator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <i class="fas fa-long-arrow-alt-up arrow-icon upBtn" id="groundUpArrow"></i>
+            </div>
+            <div class="level-card col-7">
+                <div class="level-elevator-container">
+                    <p class="level-name-container">Level 0 / GL</p>
+                    <div id="level0" class="elevator-container">
+                        <span class="elevator-text text-center">Elevator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="dingSound">
+        <source src="ding.mp3" type="audio/mpeg">
+    </audio>
+    <script src="lift.js"></script>
+</body>
+</html>
